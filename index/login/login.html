@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css" async>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js" async></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" async>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container-fluid gy-5">
+        <div class="row text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 ">
+                <div class="row">
+                    <div class="col">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div clas="row">
+                    <form action="/auth" method="post">
+                        <div class="input-group">
+                            <span class="input-group-text" id="e-mail_icon"><span class="material-icons">&#xe158;</span></span>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Username oder Email" required>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text" id="password_icon"><span class="material-icons">&#xe897;</span></span>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Passwort " required>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col align-self-center ">
+                        <button class="btn btn-primary ">Einloggen</button>
+                    </div>
+                    </form>
+                    <div class="col align-self-center ">
+                        <form action="/register " method="get ">
+                            <button class="btn btn-primary ">Registieren</button>
+                        </form>
+                    </div>
+                    <div class="col algin-self-center ">
+                        <button class="btn btn-primary ">Passwort Vergessen?</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

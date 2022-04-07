@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./home.css">
+    <!--Muss bei jeder HTML Page dabei stehenen-->
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" class="navigation-bar">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">🐒</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">Seite 1</a></li>
+                <li><a href="#">Seite 2</a></li>
+                <li><a href="#">Seite 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form action="/logout" method="get">
+                        <button class="btn btn-danger navbar-btn"><span class="glyphicon glyphicon-log-in"></span> Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" class="content"></div>
+
+</body>
+
+</html>
